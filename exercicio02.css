@@ -1,0 +1,25 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.conteudo{
+    background-color: skyblue;
+    width: 50vh;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botao button{
+    position: relative;
+    top: 500px;
+    left: -290px;
+    width: 100px;
+    padding: 5px;
+    cursor: pointer;
+}
