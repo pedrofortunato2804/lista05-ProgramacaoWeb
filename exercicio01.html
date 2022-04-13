@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 01 </title>
+    <link rel="stylesheet" href="exercicio01.css">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="container">
+            <div class="nome" id="nome">
+                <p>Seu nome aparecerá aqui!</p>
+            </div>
+        </div>
+    </div>
+    <div class="botao" id="btn1">
+        <button>Nome</button>
+    </div>
+</body>
+</html>
+<script>
+    document.getElementById("btn1").onclick = function(){
+        document.getElementById("nome").innerHTML = "<p> Pedro Fortunato </p>"
+    }
+</script>
