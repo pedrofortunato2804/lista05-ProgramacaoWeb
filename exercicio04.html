@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exercicio 04 </title>
+    <link rel="stylesheet" href="exercicio04.css">
+</head>
+<body>
+    <div class="container">
+       <table id="table">
+           <tr class="colCor">
+               <th>Nomes</th>
+           </tr>
+           <tr>
+               <td>João</td>
+           </tr>
+           <tr class="colCor">
+               <td>Pedro</td>
+           </tr>
+           <tr>
+               <td>Augusto</td>
+           </tr>
+           <tr class="colCor">
+               <td>Jorge</td>
+           </tr>
+           <tr>
+               <td>Ronaldo</td>
+           </tr>
+           <tr class="colCor">
+               <td>Francisco</td>
+           </tr>
+           <tr>
+               <td>Paulo</td>
+           </tr>
+           <tr class="colCor">
+               <td>Karen</td>
+           </tr>
+           <tr>
+               <td>Gustavo</td>
+           </tr>
+       </table>
+    </div>
+    <button id="btn1"> Ativar </button>
+    <button id="btn2"> Desativar </button>
+</body>
+</html>
+<script>
+    document.getElementById("btn1").onclick = function(){
+        let colColor = document.getElementsByClassName("colCor");
+        for(let colCor of colColor){
+            colCor.style.backgroundColor = "purple";
+            colCor.style.color = "white";
+        }
+    };
+
+    document.getElementById("btn2").onclick = function(){
+        let linhas = document.getElementsByClassName("colCor");
+        for(let colCor of linhas){
+            colCor.style.backgroundColor = "white";
+            colCor.style.color = "black";
+        }
+    };
+</script>
